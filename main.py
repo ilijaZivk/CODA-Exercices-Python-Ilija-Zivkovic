@@ -105,7 +105,60 @@ def exercice22():
     else:
         print("Majeur")
 
+def exercice23():
+    note=int(input("Inserez votre note "))
+    if note>12:
+        print("Validé")
+    else:
+        print("Non Validé")
 
+def exercice24():
+    nombre=int(input("Inserez un nombre"))
+    number=int(input("Inserez un nombre"))
+    if nombre>number:
+       print(f"{nombre} est plus grand que {number}")
+    elif nombre<number:
+       print(f"{number} est plus grand que {nombre}")
+    
+def exercice25():
+    nombre=int(input("Inserez un nombre "))
+    number=int(input("Inserez un nombre "))
+    if nombre>number:
+       print(f"{nombre} et {number} ne sont pas croissant")
+    elif nombre<number:
+       print(f"{nombre} et {number} sont croissant")
+
+def exercice26():
+    nombre=int(input("Inserez un nombre "))
+    diviseur=int(5)
+    last_digit = nombre % 10
+    if last_digit == 0 or last_digit == 5:
+        print(f"{nombre} est un divisible de 5")
+    elif last_digit != 0 or last_digit != 5:
+        print(f"{nombre} est non divisible par 5")
+
+def exercice27():
+    âge=int(input("Inserez votre âge "))
+    if âge<12:
+        print("Enfant")
+    elif âge>18:
+        print("Adulte")
+    elif 12 <= âge <= 17:
+        print("Adolescent")
+
+def exercice28():
+    temperature=int(input("Inserez la température de l'eau "))
+    if temperature<0:
+        print("l'eau est solide")
+    elif temperature>100:
+        print("l'eau est gazeuse")
+    elif 0 <= temperature <= 100:
+        print("l'eau est liquide")
+
+def exercice29():
+    
+
+    
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -153,6 +206,20 @@ def main():
         exercice21()
     elif choix == "22":
         exercice22()
+    elif choix == "23":
+        exercice23()
+    elif choix == "24":
+        exercice24()
+    elif choix == "25":
+        exercice25()
+    elif choix == "26":
+        exercice26()
+    elif choix == "27":
+        exercice27()
+    elif choix == "28":
+        exercice28()
+    elif choix == "29":
+        exercice29()
     else:
         print("Exercice non reconnu.")
 
