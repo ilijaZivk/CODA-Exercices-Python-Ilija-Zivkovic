@@ -64,18 +64,21 @@ def exercice14():
         print(f"{i} X 2", nombre*i)
 
 def exercice15():
-    nombre=int(input("Entrez la longueur d'un coté en centimètre"))
+    nombre=int(input("Entrez la longueur d'un coté en centimètre "))
     print("Le carré à un périmètre de ",nombre*4)
     
 
 def exercice16():
-    nombre=int(input("Entrez la longueur d'un coté en centimètre"))
+    nombre=int(input("Entrez la longueur d'un coté en centimètre "))
     print("Le carré à une aire de ",nombre*nombre)
 
 def exercice17():
-    nombre=int(input("Inserez les Euros"))
-    print(f"{nombre} euros font", nombre*1.1, Dollars)
+    nombre=int(input("Inserez les Euros "))
+    print(f"{nombre} Euros font ",nombre*1.1,"Dollars")
 
+def exercice18():
+    nombre=int(input("Inserez les minutes "))
+    print(nombre*60,"secondes")
 
 
 def main():
@@ -114,7 +117,9 @@ def main():
     elif choix == "16":
         exercice16()
     elif choix == "17":
-        exercice17
+        exercice17()
+    elif choix == "18":
+        exercice18()
     else:
         print("Exercice non reconnu.")
 
