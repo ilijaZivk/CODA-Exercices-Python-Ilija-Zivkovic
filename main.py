@@ -80,6 +80,31 @@ def exercice18():
     nombre=int(input("Inserez les minutes "))
     print(nombre*60,"secondes")
 
+def exercice19():
+    nombre=int(input("Inserez le prix Hors Taxe "))
+    print(nombre*1.2,"Tout Taxe Comprise")
+    
+def exercice20():
+    prenom=input("Veuillez inserez votre prenom ")
+    age=int(input("Veuillez inserez votre age "))
+    print(f"Vous êtes {prenom} et vous avez {age} ans")
+
+def exercice21():
+    nombre=int(input("Inserez un Chiffre parmi -3, 0 ou 5 "))
+    if nombre==0:
+        print("Le résultat du test est Nul")
+    if nombre==5:
+        print("Le résultat du test est Positif")
+    if nombre==-3:
+        print("Le résultat du test est Négatif")
+
+def exercice22():
+    âge=int(input("Inserez votre âge "))
+    if âge<18:
+        print("Mineur")
+    else:
+        print("Majeur")
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -120,6 +145,14 @@ def main():
         exercice17()
     elif choix == "18":
         exercice18()
+    elif choix == "19":
+        exercice19()
+    elif choix == "20":
+        exercice20()
+    elif choix == "21":
+        exercice21()
+    elif choix == "22":
+        exercice22()
     else:
         print("Exercice non reconnu.")
 
