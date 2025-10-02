@@ -50,6 +50,10 @@ def exercice11():
     nombre=int(input("Selectionner un nombre qui sera divisé par 2 "))
     print("Votre résultat est", nombre/2)
 
+def exercice12():
+    for i in range(5):
+        print("Ceci est mon message")
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -76,6 +80,8 @@ def main():
         exercice10()
     elif choix == "11":
         exercice11()
+    elif choix == "12":
+        exercice12()
     else:
         print("Exercice non reconnu.")
 
