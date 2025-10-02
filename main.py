@@ -30,7 +30,24 @@ def exercice7():
     number=int(input("Selectionner votre multiplicateur "))
     print("Votre résultat est", nombre*number)
 
-    
+def exercice8():
+    nombre=int(input("Selectionner votre nombre a diviser "))
+    number=int(input("Selectionner votre diviseur "))
+    if number==0:
+        print("On ne peut pas diviser par 0")
+    print("Votre résultat est", nombre/number)
+
+def exercice9():
+    nombre=int(input("Selectionner votre nombre "))
+    puissance=int(input("Selectionner votre puissance "))
+    print("Votre résultat est", nombre*puissance)
+
+def exercice10():
+    nombre=int(input("Selectionner un nombre qui sera multiplié par 2 "))
+    print("Votre résultat est", nombre*2)
+
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -48,6 +65,12 @@ def main():
         exercice6()
     elif choix == "7":
         exercice7()
+    elif choix == "8":
+        exercice8()
+    elif choix == "9":
+        exercice9()
+    elif choix == "10":
+        exercice10()
     else:
         print("Exercice non reconnu.")
 
