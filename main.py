@@ -46,6 +46,9 @@ def exercice10():
     nombre=int(input("Selectionner un nombre qui sera multiplié par 2 "))
     print("Votre résultat est", nombre*2)
 
+def exercice11():
+    nombre=int(input("Selectionner un nombre qui sera divisé par 2 "))
+    print("Votre résultat est", nombre/2)
 
 
 def main():
@@ -71,6 +74,8 @@ def main():
         exercice9()
     elif choix == "10":
         exercice10()
+    elif choix == "11":
+        exercice11()
     else:
         print("Exercice non reconnu.")
 
