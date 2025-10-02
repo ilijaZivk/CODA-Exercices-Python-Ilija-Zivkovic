@@ -25,6 +25,11 @@ def exercice6():
     number=int(input("Selectionner votre nombre "))
     print("Votre résultat est", nombre-number)
 
+def exercice7():
+    nombre=int(input("Selectionner votre nombre a multiplier "))
+    number=int(input("Selectionner votre multiplicateur "))
+    print("Votre résultat est", nombre*number)
+
     
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -41,6 +46,8 @@ def main():
         exercice5()
     elif choix == "6":
         exercice6()
+    elif choix == "7":
+        exercice7()
     else:
         print("Exercice non reconnu.")
 
