@@ -65,7 +65,18 @@ def exercice14():
 
 def exercice15():
     nombre=int(input("Entrez la longueur d'un coté en centimètre"))
-    print("Le carré à une aire de ",nombre*4)
+    print("Le carré à un périmètre de ",nombre*4)
+    
+
+def exercice16():
+    nombre=int(input("Entrez la longueur d'un coté en centimètre"))
+    print("Le carré à une aire de ",nombre*nombre)
+
+def exercice17():
+    nombre=int(input("Inserez les Euros"))
+    print(f"{nombre} euros font", nombre*1.1, Dollars)
+
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -100,6 +111,10 @@ def main():
         exercice14()
     elif choix == "15":
         exercice15()
+    elif choix == "16":
+        exercice16()
+    elif choix == "17":
+        exercice17
     else:
         print("Exercice non reconnu.")
 
