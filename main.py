@@ -13,7 +13,18 @@ def exercice3():
 
 def exercice4():
     age=int(input("Insérez votre année de naissance "))
-    print(2025-age)
+    print("Vous avez", 2025-age,"ans")
+
+def exercice5():
+    nombre=int(input("Selectionner votre nombre a additionner "))
+    number=int(input("Selectionner votre autre nombre "))
+    print("Votre résultat est", nombre+number)
+
+def exercice6():
+    nombre=int(input("Selectionner votre nombre a soustraire "))
+    number=int(input("Selectionner votre nombre "))
+    print("Votre résultat est", nombre-number)
+
     
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -26,6 +37,10 @@ def main():
         exercice3()
     elif choix == "4":
         exercice4()
+    elif choix == "5":
+        exercice5()
+    elif choix == "6":
+        exercice6()
     else:
         print("Exercice non reconnu.")
 
