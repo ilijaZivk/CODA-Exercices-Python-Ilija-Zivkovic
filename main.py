@@ -74,7 +74,7 @@ def exercice16():
 
 def exercice17():
     nombre=int(input("Inserez les Euros "))
-    print(f"{nombre} Euros font ",nombre*1.1,"Dollars")
+    print(f"{nombre} Euros font",nombre*1.1,"Dollars")
 
 def exercice18():
     nombre=int(input("Inserez les minutes "))
@@ -156,8 +156,16 @@ def exercice28():
         print("l'eau est liquide")
 
 def exercice29():
-    
-
+    note=int(input("Entrez votre note"))
+    if note<10.99:
+        print("Recalé")
+    elif note<=13.99:
+        print("Passable")
+    elif note<=16.99:
+        print("Bien")
+    elif note<=20:
+        print("Très bien")
+      
     
 def main():
     # Demande à l'utilisateur quel exercice exécuter
