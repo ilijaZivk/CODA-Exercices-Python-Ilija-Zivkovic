@@ -195,6 +195,16 @@ def exercice34():
     for i in range(2, nombre + 1, 2):
         print(i)
 
+def exercice35():
+    nombre = int(input("Inserez votre nombre "))
+    i = 1
+    while i * i <= nombre:
+        print(i * i)
+        i = i + 1
+
+def exercice35():
+
+    
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -267,6 +277,10 @@ def main():
         exercice33()
     elif choix == "34":
         exercice34()
+    elif choix == "35":
+        exercice35()
+    elif choix == "36":
+        exercice36()
     else:
         print("Exercice non reconnu.")
 
