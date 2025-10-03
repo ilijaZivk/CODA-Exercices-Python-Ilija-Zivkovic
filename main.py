@@ -203,7 +203,10 @@ def exercice35():
         i = i + 1
 
 def exercice35():
-
+    nombre=int(input("Combien de fois voulez vous répéter ? "))
+    mot=(input("Quel mot voulez vous répéter ? "))
+    for i in range(nombre):
+        print (mot)
     
 
 def main():
