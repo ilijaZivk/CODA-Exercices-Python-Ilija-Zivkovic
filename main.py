@@ -171,6 +171,10 @@ def exercice30():
     for n in range(1, n):
         print(n)
 
+def exercice31():
+    n=int(input("Inserez votre nombre "))
+    for n in range(n, -1, -1):
+        print(n)
     
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -235,6 +239,8 @@ def main():
         exercice29()
     elif choix == "30":
         exercice30()
+    elif choix == "31":
+        exercice31()
     else:
         print("Exercice non reconnu.")
 
