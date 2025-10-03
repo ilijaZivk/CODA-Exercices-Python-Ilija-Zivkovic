@@ -107,10 +107,12 @@ def exercice22():
 
 def exercice23():
     note=int(input("Inserez votre note "))
-    if note>12:
+    if note>10:
         print("Validé")
-    else:
+    elif note<=20:
         print("Non Validé")
+    else:
+        print("La note ne peut pas excéder 20")
 
 def exercice24():
     nombre=int(input("Inserez un nombre"))
@@ -176,6 +178,24 @@ def exercice31():
     for n in range(n, -1, -1):
         print(n)
     
+def exercice32():
+    n=int(input("Entrez un nombre N : "))
+    somme = 0
+    for i in range(1, n + 1):
+        somme += i
+    print(f"La somme de 1 à {n} est {somme}")
+
+def exercice33():
+    nombre=int(3)
+    for i in range(1, 11):
+        print(f"{i} X 3", nombre*i)
+
+def exercice34():
+    nombre=int(input("Inserez votre nombre "))
+    for i in range(2, nombre + 1, 2):
+        print(i)
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -241,6 +261,12 @@ def main():
         exercice30()
     elif choix == "31":
         exercice31()
+    elif choix == "32":
+        exercice32()
+    elif choix == "33":
+        exercice33()
+    elif choix == "34":
+        exercice34()
     else:
         print("Exercice non reconnu.")
 
